@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Link } from 'react-router';
 
 class App extends Component {
   render() {
@@ -11,7 +12,10 @@ class App extends Component {
           <h2>Guess my doggie</h2>
         </div>
         <p className="App-intro tc">
-          To get started, click <a className="bg-light-purple white">start</a>
+          To get started, click
+          <a className="bg-light-purple white db pa3">
+            <Link to={`/doggo`}>start</Link>
+          </a>
         </p>
       </div>
     );
